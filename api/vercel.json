@@ -1,0 +1,6 @@
+{
+  "functions": {
+    "summarise.ts": { "runtime": "nodejs18.x" },
+    "transcribe.ts": { "runtime": "nodejs18.x" }
+  }
+}
