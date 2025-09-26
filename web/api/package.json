@@ -1,0 +1,20 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.4",
+    "@types/uuid": "^11.0.0",
+    "@vercel/node": "^5.3.24",
+    "openai": "^5.22.1",
+    "uuid": "^13.0.0",
+    "zod": "^3.25.76"
+  }
+}

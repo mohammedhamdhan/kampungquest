@@ -1,2 +1,14 @@
 node_modules
 .env
+.env.local
+.env.*.local
+.DS_Store
+dist
+*.log
+.vscode
+.idea
+*.sql
+*.sqlite
+DAY4_IMPLEMENTATION.md
+coverage
+SETUP_INSTRUCTIONS.md

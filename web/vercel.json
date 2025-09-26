@@ -1,0 +1,14 @@
+{
+  "functions": {
+    "api/*.ts": {
+      "runtime": "@vercel/node"
+    }
+  },
+  "env": {
+    "OPENAI_API_KEY": "@openai-api-key",
+    "DEEPGRAM_API_KEY": "@deepgram-api-key",
+    "SUPABASE_URL": "@supabase-url",
+    "SUPABASE_ANON_KEY": "@supabase-anon-key",
+    "SUPABASE_SERVICE_ROLE_KEY": "@supabase-service-role-key"
+  }
+}
