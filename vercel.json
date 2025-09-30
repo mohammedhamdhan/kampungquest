@@ -1,18 +1,17 @@
 {
-  "version": 2,
-  "buildCommand": "cd web && npm ci && npm run build",
-  "outputDirectory": "web/dist",
-  "installCommand": "npm --version",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm ci",
   "framework": null,
   "functions": {
-    "web/api/**/*.ts": {
+    "api/**/*.ts": {
       "runtime": "@vercel/node@3.0.0"
     }
   },
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "/web/api/$1"
+      "destination": "/api/$1"
     }
   ],
   "routes": [
