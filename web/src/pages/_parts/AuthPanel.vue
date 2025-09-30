@@ -20,36 +20,27 @@
       </button>
     </form>
 
-    <!-- Step 2: OTP Input -->
-    <form v-else @submit.prevent="verifyOtp" class="space-y-3">
-      <div class="text-sm text-gray-600 dark:text-gray-400 mb-2">
-        Check your email ({{ email }}) for the verification code:
+    <!-- Step 2: Magic Link Sent -->
+    <div v-else class="space-y-3">
+      <div class="text-center py-6">
+        <div class="text-lg font-medium text-gray-900 dark:text-gray-100 mb-2">
+          Check your email
+        </div>
+        <div class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+          We sent a magic link to <strong>{{ email }}</strong>. Click the link in the email to sign in.
+        </div>
+        <div class="text-xs text-gray-500 dark:text-gray-500">
+          The link will expire in 1 hour.
+        </div>
       </div>
-      <div>
-        <input
-          v-model="otpCode"
-          type="text"
-          placeholder="Enter 6-digit code"
-          required
-          maxlength="6"
-          class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 text-center text-lg tracking-widest"
-        />
-      </div>
-      <button
-        type="submit"
-        :disabled="loading || otpCode.length !== 6"
-        class="w-full px-4 py-2 bg-emerald-600 text-white rounded-md hover:bg-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed"
-      >
-        {{ loading ? 'Verifying...' : 'Verify Code' }}
-      </button>
       <button
         type="button"
         @click="resetForm"
-        class="w-full px-4 py-2 text-gray-600 hover:text-gray-800 text-sm"
+        class="w-full px-4 py-2 text-gray-600 hover:text-gray-800 text-sm dark:text-gray-400 dark:hover:text-gray-200"
       >
         ← Back to email
       </button>
-    </form>
+    </div>
 
     <div v-if="message" :class="[
       'mt-3 p-3 rounded-md text-sm',
@@ -81,12 +72,12 @@ const sendMagicLink = async () => {
     console.log('Attempting to send OTP to:', email.value)
     await signInWithOtp(email.value)
 
-    message.value = 'Verification code sent! Check your email.'
+    message.value = 'Magic link sent! Check your email.'
     success.value = true
     otpSent.value = true
   } catch (error: any) {
     console.error('Auth error:', error)
-    message.value = error.message || 'Failed to send verification code'
+    message.value = error.message || 'Failed to send magic link'
     success.value = false
   } finally {
     loading.value = false

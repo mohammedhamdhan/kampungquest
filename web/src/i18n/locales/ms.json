@@ -1,0 +1,121 @@
+{
+  "common": {
+    "loading": "Memuatkan...",
+    "error": "Ralat",
+    "success": "Berjaya",
+    "cancel": "Batal",
+    "confirm": "Sahkan",
+    "save": "Simpan",
+    "delete": "Padam",
+    "edit": "Sunting",
+    "back": "Kembali",
+    "next": "Seterusnya",
+    "submit": "Hantar",
+    "close": "Tutup"
+  },
+  "auth": {
+    "signIn": "Log Masuk",
+    "signOut": "Log Keluar",
+    "email": "E-mel",
+    "sendMagicLink": "Hantar pautan ajaib",
+    "checkEmail": "Semak e-mel anda",
+    "magicLinkSent": "Kami telah menghantar pautan ajaib ke {email}. Klik pautan dalam e-mel untuk log masuk.",
+    "linkExpires": "Pautan akan tamat tempoh dalam 1 jam.",
+    "backToEmail": "Kembali ke e-mel"
+  },
+  "nav": {
+    "home": "Laman Utama",
+    "map": "Jubin Anda",
+    "quests": "Tugasan",
+    "pairs": "Pasangan",
+    "profile": "Profil",
+    "settings": "Tetapan",
+    "community": "Dinding Komuniti"
+  },
+  "pairs": {
+    "title": "Pasangan Anda",
+    "noPairs": "Tiada pasangan lagi",
+    "createPair": "Cipta Pasangan",
+    "inviteCode": "Kod Jemputan",
+    "activePair": "Pasangan Aktif",
+    "switchPair": "Tukar Pasangan Aktif",
+    "managePairs": "Urus Pasangan"
+  },
+  "quests": {
+    "teach": "Tugasan Mengajar",
+    "story": "Tugasan Cerita",
+    "searchPlaceholder": "Cari tugasan...",
+    "minutes": "{count} minit",
+    "startQuest": "Mula Tugasan"
+  },
+  "tiles": {
+    "title": "Jubin Anda",
+    "noTiles": "Tiada jubin lagi",
+    "createFirst": "Mulakan Tugasan Mengajar pertama anda!",
+    "exportZine": "Eksport sebagai Zine",
+    "exportData": "Eksport Data",
+    "selectTiles": "Pilih jubin untuk dieksport",
+    "visibility": "Keterlihatan",
+    "private": "Peribadi",
+    "family": "Keluarga",
+    "public": "Awam",
+    "blurFaces": "Kaburkan muka",
+    "delete": "Padam jubin",
+    "restore": "Pulihkan",
+    "deleteConfirm": "Adakah anda pasti mahu memadam jubin ini? Anda boleh memulihkannya dalam tempoh 7 hari."
+  },
+  "privacy": {
+    "title": "Privasi & Data",
+    "consentManager": "Pengurus Keizinan",
+    "defaultVisibility": "Keterlihatan lalai untuk jubin baharu",
+    "bulkUpdate": "Kemas kini semua jubin sekaligus",
+    "setAllPrivate": "Tetapkan semua jubin sebagai Peribadi",
+    "recentlyDeleted": "Baru-baru Ini Dipadam",
+    "deleteAccount": "Padam Akaun",
+    "downloadData": "Muat Turun Data Saya",
+    "deleteAccountConfirm": "Ini akan memadam akaun anda dan semua jubin anda secara kekal. Tindakan ini tidak boleh dibatalkan.",
+    "dataExported": "Data anda telah dieksport"
+  },
+  "community": {
+    "title": "Dinding Komuniti",
+    "submitToWall": "Hantar ke Dinding Komuniti",
+    "submitConfirm": "Jubin anda akan kelihatan kepada semua pengguna. Adakah anda pasti?",
+    "report": "Laporkan",
+    "reportReasons": {
+      "inappropriate": "Kandungan tidak sesuai",
+      "spam": "Spam",
+      "copyright": "Pelanggaran hak cipta",
+      "other": "Lain-lain"
+    },
+    "moderation": {
+      "title": "Baris Gilir Moderasi",
+      "pending": "Menunggu",
+      "approve": "Lulus",
+      "reject": "Tolak"
+    }
+  },
+  "settings": {
+    "title": "Tetapan",
+    "language": "Bahasa",
+    "fontSize": "Saiz Fon",
+    "notifications": "Pemberitahuan",
+    "accessibility": "Kebolehcapaian",
+    "fontScale": "Skala Fon"
+  },
+  "feedback": {
+    "title": "Hantar Maklum Balas",
+    "message": "Mesej anda",
+    "emailOptional": "E-mel (pilihan)",
+    "submit": "Hantar Maklum Balas",
+    "thanks": "Terima kasih atas maklum balas anda!"
+  },
+  "coach": {
+    "helpSeniorChoose": "Bantu warga emas anda memilih sesuatu yang mereka tahu dengan baik. Tanya mereka: \"Apa yang anda sering lakukan?\""
+  },
+  "errors": {
+    "generic": "Sesuatu tidak kena",
+    "networkError": "Ralat rangkaian. Sila semak sambungan anda.",
+    "unauthorized": "Anda perlu log masuk untuk melakukan itu",
+    "rateLimitExceeded": "Terlalu banyak permintaan. Sila cuba lagi kemudian."
+  }
+}

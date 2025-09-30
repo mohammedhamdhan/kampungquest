@@ -1,0 +1,121 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "close": "Close"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "email": "Email",
+    "sendMagicLink": "Send magic link",
+    "checkEmail": "Check your email",
+    "magicLinkSent": "We sent a magic link to {email}. Click the link in the email to sign in.",
+    "linkExpires": "The link will expire in 1 hour.",
+    "backToEmail": "Back to email"
+  },
+  "nav": {
+    "home": "Home",
+    "map": "Your Tiles",
+    "quests": "Quests",
+    "pairs": "Pairs",
+    "profile": "Profile",
+    "settings": "Settings",
+    "community": "Community Wall"
+  },
+  "pairs": {
+    "title": "Your Pairs",
+    "noPairs": "No pairs yet",
+    "createPair": "Create a Pair",
+    "inviteCode": "Invite Code",
+    "activePair": "Active Pair",
+    "switchPair": "Switch Active Pair",
+    "managePairs": "Manage Pairs"
+  },
+  "quests": {
+    "teach": "Teach Quests",
+    "story": "Story Quests",
+    "searchPlaceholder": "Search quests...",
+    "minutes": "{count} min",
+    "startQuest": "Start Quest"
+  },
+  "tiles": {
+    "title": "Your Tiles",
+    "noTiles": "No tiles yet",
+    "createFirst": "Start your first Teach Quest!",
+    "exportZine": "Export as Zine",
+    "exportData": "Export Data",
+    "selectTiles": "Select tiles to export",
+    "visibility": "Visibility",
+    "private": "Private",
+    "family": "Family",
+    "public": "Public",
+    "blurFaces": "Blur faces",
+    "delete": "Delete tile",
+    "restore": "Restore",
+    "deleteConfirm": "Are you sure you want to delete this tile? You can restore it within 7 days."
+  },
+  "privacy": {
+    "title": "Privacy & Data",
+    "consentManager": "Consent Manager",
+    "defaultVisibility": "Default visibility for new tiles",
+    "bulkUpdate": "Bulk update all tiles",
+    "setAllPrivate": "Set all tiles to Private",
+    "recentlyDeleted": "Recently Deleted",
+    "deleteAccount": "Delete Account",
+    "downloadData": "Download My Data",
+    "deleteAccountConfirm": "This will permanently delete your account and all your tiles. This action cannot be undone.",
+    "dataExported": "Your data has been exported"
+  },
+  "community": {
+    "title": "Community Wall",
+    "submitToWall": "Submit to Community Wall",
+    "submitConfirm": "Your tile will be visible to all users. Are you sure?",
+    "report": "Report",
+    "reportReasons": {
+      "inappropriate": "Inappropriate content",
+      "spam": "Spam",
+      "copyright": "Copyright violation",
+      "other": "Other"
+    },
+    "moderation": {
+      "title": "Moderation Queue",
+      "pending": "Pending",
+      "approve": "Approve",
+      "reject": "Reject"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "fontSize": "Font Size",
+    "notifications": "Notifications",
+    "accessibility": "Accessibility",
+    "fontScale": "Font Scale"
+  },
+  "feedback": {
+    "title": "Send Feedback",
+    "message": "Your message",
+    "emailOptional": "Email (optional)",
+    "submit": "Send Feedback",
+    "thanks": "Thanks for your feedback!"
+  },
+  "coach": {
+    "helpSeniorChoose": "Help your senior choose something they know well. Ask them: \"What's something you've done many times?\""
+  },
+  "errors": {
+    "generic": "Something went wrong",
+    "networkError": "Network error. Please check your connection.",
+    "unauthorized": "You need to sign in to do that",
+    "rateLimitExceeded": "Too many requests. Please try again later."
+  }
+}

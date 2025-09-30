@@ -1,0 +1,121 @@
+{
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "cancel": "取消",
+    "confirm": "确认",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "back": "返回",
+    "next": "下一步",
+    "submit": "提交",
+    "close": "关闭"
+  },
+  "auth": {
+    "signIn": "登录",
+    "signOut": "退出",
+    "email": "电子邮件",
+    "sendMagicLink": "发送魔法链接",
+    "checkEmail": "查看您的电子邮件",
+    "magicLinkSent": "我们已向 {email} 发送了魔法链接。点击电子邮件中的链接登录。",
+    "linkExpires": "链接将在1小时后过期。",
+    "backToEmail": "返回电子邮件"
+  },
+  "nav": {
+    "home": "首页",
+    "map": "您的记忆卡",
+    "quests": "任务",
+    "pairs": "配对",
+    "profile": "个人资料",
+    "settings": "设置",
+    "community": "社区墙"
+  },
+  "pairs": {
+    "title": "您的配对",
+    "noPairs": "还没有配对",
+    "createPair": "创建配对",
+    "inviteCode": "邀请码",
+    "activePair": "当前配对",
+    "switchPair": "切换配对",
+    "managePairs": "管理配对"
+  },
+  "quests": {
+    "teach": "教学任务",
+    "story": "故事任务",
+    "searchPlaceholder": "搜索任务...",
+    "minutes": "{count} 分钟",
+    "startQuest": "开始任务"
+  },
+  "tiles": {
+    "title": "您的记忆卡",
+    "noTiles": "还没有记忆卡",
+    "createFirst": "开始您的第一个教学任务！",
+    "exportZine": "导出为杂志",
+    "exportData": "导出数据",
+    "selectTiles": "选择要导出的记忆卡",
+    "visibility": "可见性",
+    "private": "私密",
+    "family": "家庭",
+    "public": "公开",
+    "blurFaces": "模糊面部",
+    "delete": "删除记忆卡",
+    "restore": "恢复",
+    "deleteConfirm": "您确定要删除此记忆卡吗？您可以在7天内恢复它。"
+  },
+  "privacy": {
+    "title": "隐私与数据",
+    "consentManager": "隐私管理",
+    "defaultVisibility": "新记忆卡的默认可见性",
+    "bulkUpdate": "批量更新所有记忆卡",
+    "setAllPrivate": "将所有记忆卡设为私密",
+    "recentlyDeleted": "最近删除",
+    "deleteAccount": "删除账户",
+    "downloadData": "下载我的数据",
+    "deleteAccountConfirm": "这将永久删除您的账户和所有记忆卡。此操作无法撤消。",
+    "dataExported": "您的数据已导出"
+  },
+  "community": {
+    "title": "社区墙",
+    "submitToWall": "提交到社区墙",
+    "submitConfirm": "您的记忆卡将对所有用户可见。您确定吗？",
+    "report": "举报",
+    "reportReasons": {
+      "inappropriate": "不当内容",
+      "spam": "垃圾信息",
+      "copyright": "侵犯版权",
+      "other": "其他"
+    },
+    "moderation": {
+      "title": "审核队列",
+      "pending": "待审核",
+      "approve": "批准",
+      "reject": "拒绝"
+    }
+  },
+  "settings": {
+    "title": "设置",
+    "language": "语言",
+    "fontSize": "字体大小",
+    "notifications": "通知",
+    "accessibility": "辅助功能",
+    "fontScale": "字体缩放"
+  },
+  "feedback": {
+    "title": "发送反馈",
+    "message": "您的消息",
+    "emailOptional": "电子邮件（可选）",
+    "submit": "发送反馈",
+    "thanks": "感谢您的反馈！"
+  },
+  "coach": {
+    "helpSeniorChoose": "帮助您的长辈选择他们熟悉的事情。问他们：\"您经常做什么事情？\""
+  },
+  "errors": {
+    "generic": "出了点问题",
+    "networkError": "网络错误。请检查您的连接。",
+    "unauthorized": "您需要登录才能执行此操作",
+    "rateLimitExceeded": "请求过多。请稍后再试。"
+  }
+}

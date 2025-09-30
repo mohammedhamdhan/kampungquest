@@ -57,8 +57,14 @@
 
           <!-- Attribution -->
           <div class="text-center pt-4 border-t border-emerald-200">
-            <p class="text-sm text-emerald-600">
+            <p class="text-sm text-emerald-600 font-medium">
               {{ teacherName ? `Taught by ${teacherName}` : 'Preserved through KampungQuest' }}
+            </p>
+            <p v-if="partnerName" class="text-sm text-emerald-600 mt-1">
+              With {{ partnerName }}
+            </p>
+            <p v-if="createdDate" class="text-xs text-emerald-500 mt-1">
+              {{ formatDate(createdDate) }}
             </p>
             <p class="text-xs text-emerald-500 mt-1">
               Connecting generations through shared knowledge
@@ -129,6 +135,8 @@ interface Props {
   tileTitle?: string
   keySteps?: string[]
   teacherName?: string
+  partnerName?: string
+  createdDate?: string
 }
 
 const props = defineProps<Props>()
@@ -250,5 +258,14 @@ const showSuccess = (message: string) => {
   setTimeout(() => {
     showSuccessMessage.value = false
   }, 3000)
+}
+
+const formatDate = (dateString: string) => {
+  const date = new Date(dateString)
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  })
 }
 </script>

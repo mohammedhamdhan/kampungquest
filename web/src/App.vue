@@ -8,10 +8,12 @@ import ShareCard from '@/components/ShareCard.vue'
 import { useAuth } from '@/composables/useAuth'
 import { useStreaks } from '@/composables/useStreaks'
 import { usePairing } from '@/composables/usePairing'
+import { useUserPreferences } from '@/composables/useUserPreferences'
 
 const { user, signOut, initAuth } = useAuth()
 const { streakDisplay, loadPairStreak, milestones } = useStreaks()
 const { activePair } = usePairing()
+const { preferences, loadPreferences } = useUserPreferences()
 
 // Milestone celebration state
 const showMilestoneCelebration = ref(false)
@@ -31,6 +33,12 @@ onMounted(async () => {
   // Load streak data when app mounts and user is available
   if (user.value && activePair.value) {
     await loadPairStreak()
+  }
+
+  // Load user preferences and apply font scaling
+  await loadPreferences()
+  if (preferences.value?.font_scale) {
+    document.documentElement.style.setProperty('--font-scale', preferences.value.font_scale.toString())
   }
 })
 
@@ -125,9 +133,6 @@ const handleShared = () => {
               @click="handleStreakClick"
             />
 
-            <!-- Pair Indicator -->
-            <PairIndicator v-if="user" />
-
             <!-- User Menu -->
             <div v-if="user" class="flex items-center gap-4">
               <router-link
@@ -165,6 +170,11 @@ const handleShared = () => {
 
         <!-- Content -->
         <div class="relative z-10 p-8 rounded-3xl">
+          <!-- Pair Indicator moved to content area -->
+          <div v-if="user" class="mb-6 flex justify-end">
+            <PairIndicator />
+          </div>
+
           <router-view />
         </div>
       </div>
@@ -189,3 +199,36 @@ const handleShared = () => {
     />
   </div>
 </template>
+
+<style>
+/* Global font scaling support */
+:root {
+  --font-scale: 1;
+}
+
+body {
+  font-size: calc(1rem * var(--font-scale));
+}
+
+/* Ensure headings scale proportionally */
+h1 {
+  font-size: calc(2.25rem * var(--font-scale));
+}
+
+h2 {
+  font-size: calc(1.875rem * var(--font-scale));
+}
+
+h3 {
+  font-size: calc(1.5rem * var(--font-scale));
+}
+
+h4 {
+  font-size: calc(1.25rem * var(--font-scale));
+}
+
+/* Ensure buttons and inputs scale */
+button, input, select, textarea {
+  font-size: calc(1rem * var(--font-scale));
+}
+</style>

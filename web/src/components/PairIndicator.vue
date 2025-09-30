@@ -54,13 +54,13 @@ const closeMenu = () => {
 
     <div
       v-if="showMenu"
-      class="fixed inset-0 z-[9998]"
+      class="fixed inset-0 z-40"
       @click="closeMenu"
     ></div>
 
     <div
       v-if="showMenu"
-      class="absolute right-0 mt-2 w-72 bg-white dark:bg-gray-800 rounded-xl shadow-2xl border border-gray-200 dark:border-gray-700 z-[9999] overflow-hidden"
+      class="absolute right-0 mt-2 w-72 bg-white dark:bg-gray-800 rounded-xl shadow-2xl border border-gray-200 dark:border-gray-700 z-50 overflow-hidden"
     >
       <div class="p-3 border-b border-gray-200 dark:border-gray-700">
         <h3 class="text-sm font-semibold text-gray-700 dark:text-gray-300">Switch Active Pair</h3>
